@@ -134,10 +134,6 @@ func processMatrix(matrix [][]int) []*Coordinate {
 	return data
 }
 
-func edgeTrees(s [][]int) int {
-	return (len(s[0])-1)*2 + ((len(s) - 1) * 2)
-}
-
 func isVisible(tree *CoordInfo) bool {
 	res := false
 	if tree.height > tree.neighbourMinMaxHeight {
